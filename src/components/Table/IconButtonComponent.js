@@ -1,9 +1,9 @@
 import React from 'react';
 import IconButton from '@material-ui/core/IconButton';
 
-function IconButtonComponent({icon, onClick}) {
+function IconButtonComponent({icon, onClick, disabled}) {
     return(
-        <IconButton onClick={onClick}>
+        <IconButton onClick={onClick} disabled={disabled}>
             {icon}
         </IconButton>
     )
