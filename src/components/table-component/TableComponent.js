@@ -36,7 +36,7 @@ class TableComponent extends React.PureComponent {
               <TableNewRow headers={this.props.headers} changeEditMode={this.changeNewRowActive} onSave={this.props.onSave}/>
             ))}
             {renderIf(this.props.editable && !this.state.newRowActive)(() => (
-              <ButtonComponent label="Add New Row"
+              <ButtonComponent label="Dodać wiersz"
                                onClick={() => this.changeNewRowActive(true)}
                                style={{margin: "10px"}}
               />

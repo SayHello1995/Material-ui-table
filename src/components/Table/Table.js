@@ -14,7 +14,7 @@ class TableHC extends React.Component {
         timeTo: "11:30",
         direction: "Direction1",
         status: "Open",
-        comment: "What is the meaning of life?"
+        comment: "Nowy komentarz"
       },
       {
         id: 2,
@@ -22,7 +22,7 @@ class TableHC extends React.Component {
         timeTo: "11:30",
         direction: "Direction1",
         status: "Open",
-        comment: "What is the meaning of life?"
+        comment: "Nowy komentarz"
       },
       {
         id: 3,
@@ -30,7 +30,7 @@ class TableHC extends React.Component {
         timeTo: "11:30",
         direction: "Direction1",
         status: "Open",
-        comment: "What is the meaning of life?"
+        comment: "Nowy komentarz"
       },
       {
         id: 4,
@@ -38,7 +38,7 @@ class TableHC extends React.Component {
         timeTo: "11:30",
         direction: "Direction1",
         status: "Open",
-        comment: "What is the meaning of life?"
+        comment: "Nowy komentarz"
       }
     ]
   };
@@ -57,12 +57,12 @@ class TableHC extends React.Component {
     {
       name: "Kierunek",
       field: "direction",
-      inputComponent: <Input type="text"/>
+      inputComponent: <SelectComponent values={["kierunek prawy P", "kierunek lewy L"]}/>
     },
     {
       name: "Status",
       field: "status",
-      inputComponent: <SelectComponent values={["Open", "Close"]}/>
+      inputComponent: <SelectComponent values={["oznacz dane", "wyklucz dane"]}/>
     },
     {
       name: "Komentarz",
@@ -99,7 +99,7 @@ class TableHC extends React.Component {
   render() {
     return (
       <TableComponent onSave={this.onSave} onDelete={this.onDelete} onEdit={this.onEdit} headers={this.headers} data={this.state.data}
-                      tableName={"Such a cool table"} editable={true}/>
+                      tableName={"Weryfikacja odcinka pomiarowego nr#"} editable={true}/>
     )
   }
 }
