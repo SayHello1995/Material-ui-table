@@ -8,7 +8,6 @@ import TableBody from '@material-ui/core/TableBody';
 import Button from '@material-ui/core/Button';
 import AddIcon from '@material-ui/icons/Add';
 import IconButtonComponent from './IconButtonComponent';
-import Input from "@material-ui/core/Input";
 import renderIf from 'render-if';
 
 const PaperStyles = {
